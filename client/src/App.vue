@@ -1,30 +1,46 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <h1>Choose CPU Typing Speed:</h1>
+    <input id="wpm" type="text" value="50"/>
   </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+    <textarea name="typing-area" id="typing-area" autofocus spellcheck="false"></textarea>
+  </template>
+
+<script></script>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+div {
+  display: flex;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+#wpm {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2rem;
+  width: 100px;
+  text-align: center;
+  caret-color: white; /* optional: matches the text color */
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+h1 {
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+#typing-area {
+  width: 500px;
+  height: 150px; /* or adjust based on your layout */
+  font-size: 1.5rem;
+  font-family: monospace;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  resize: none;
+  caret-color: white;
+  line-height: 1.6;
+  padding: 10px;
 }
 </style>
